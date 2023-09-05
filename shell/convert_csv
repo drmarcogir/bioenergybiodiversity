@@ -1,3 +1,0 @@
-paste *.csv > tot.csv
-
-ulimit -Sn 30000
