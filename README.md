@@ -30,6 +30,6 @@ To access the content of this repository, follow these steps:
 1. **Clone the Repository:** You can clone the repository using the following command in your terminal or command prompt:
 `git clone https://github.com/drmarcogir/bioenergybiodiversity.git`
 
-2. **R Code:** The R code is structured in R project format. No relative paths need to be specified when reproducing the analyses. The Rproj file can be used to open it.
+2. **R Code:** The R code is structured in R project format. No relative paths need to be specified when reproducing the analyses. The `.Rproj` file can be used to open it.
 
 3. **Jupyter Notebook:** The notebook can be run as a standalone notebook using Jupyter notebooks, Jupyter Lab, or similar tools. Note that the Python Earth Engine API should be installed. Alternatively, it can be imported into Google Colab (https://colab.research.google.com/) and run from there.
