@@ -30,6 +30,6 @@ To access the content of this repository, follow these steps:
 
 1. **Clone the Repository:** You can clone the repository using the following command in your terminal or command prompt:
 
-2. **R code** The R code is structured in R project format. No relative paths need to specified when reproducing the analyses
+2. **R code** The R code is structured in R project format. No relative paths need to specified when reproducing the analyses. The Rproj file can be used to open it. 
 
-3. **Jupyter notebook** The notebook can be run as as standalone notebook. Note that the Python Earth Engine API should be installed. Alternatively it can be imported into Google Colaboratory (https://colab.research.google.com/).
+3. **Jupyter notebook** The notebook can be run as as standalone notebook using jupyter notebooks, jupyter lab, or similar. Note that the Python Earth Engine API should be installed. Alternatively it can be imported into Google Colab (https://colab.research.google.com/) and run from there. 
