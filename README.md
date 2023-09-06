@@ -13,7 +13,7 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 
 ### 2. Python code (Jupyter Notebook)
 - **Folder Name:** `notebooks`
-- **Description:** This folder contains Jupyter notebooks (.ipynb files) that focus on the extraction of percentages of bioenergy for the top fraction of the landscape.
+- **Description:** This folder contains Jupyter notebooks (.ipynb files) that focus on the calculation of Mha of bioenergy inside and ouside protected areas within the most important areas for biodiversity (top 17% of pixels and top 30% of pixels). Calculations were performed using Google Earth Engine via the Python API.
 
 ### 3. Figures
 - **Folder Name:** `figures`
