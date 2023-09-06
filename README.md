@@ -1,7 +1,7 @@
-# Paper title
+# Bioenergy expansion and post-2020 biodiversity conservation targets
 
 ## Background
-This text outlines the structure of the GitHub repository associated with the paper titled "Biodiversity and Biodiversity," currently under review. The repository contains code, figures, and Jupyter notebooks related to the analysis and visualization of XXXX.
+This text outlines the structure of the GitHub repository associated with the paper titled "XXX". The repository contains R and Python code, related to the analysis and visualization of conflicts and synergies in biodiversity and bioenergy expansion.
 
 ## Repository Structure
 
@@ -9,13 +9,18 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 
 ### 1. R code
 - **Folder Name:** `R`
-- **Description:** This folder contains R scripts and associated data files used to generate figures and visualizations related to the biodiversity analysis. The figures are generated using R packages such as ggplot2, and the scripts are well-documented for reproducibility.
+- **Description:** This folder contains R scripts and associated data files used to generate figures and visualizations related to the biodiversity analysis. 
+
 
 ### 2. Notebooks (Jupyter)
 - **Folder Name:** `notebooks`
-- **Description:** This folder contains Jupyter notebooks (.ipynb files) that detail the step-by-step analysis of biodiversity data. Each notebook focuses on a specific aspect of the research, including data preprocessing, statistical analysis, and visualization. The notebooks are designed to be self-explanatory, making it easier for reviewers and readers to follow the analysis.
+- **Description:** This folder contains a Jupyter notebook (.ipynb files) that focus on the extraction of percentages of bionergey for the top fraction of the landscape 
 
-### 3. PDF Documents
+### 3. Figures
+- **Folder Name:** `figures`
+- **Description:** This folder contains figures produced with the R scripts.
+
+### 3. PDF docs with readbility of the code
 - **Folder Name:** `pdf`
 - **Description:** This folder contains PDF versions of the Jupyter notebooks and R Markdown documents used in the paper. These PDFs are provided for the convenience of reviewers and readers who may prefer a static, printable format for reviewing the code and results.
 
