@@ -24,9 +24,12 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 - **Folder Name:** `pdf`
 - **Description:** This folder contains PDF versions of the Jupyter notebooks and R Markdown documents used in the paper. These PDFs are provided for the convenience of reviewers and readers who may prefer a static, printable format for reviewing the code and results.
 
-## How to Use the Repository
+## How to Use the Repository, R project and Jupyter notebook
 
 To access the content of this repository, follow these steps:
 
 1. **Clone the Repository:** You can clone the repository using the following command in your terminal or command prompt:
 
+2. **R code** The R code is structured in R project format. No relative paths need to specified when reproducing the analyses
+
+3. **Jupyter notebook** The notebook can be run as as standalone notebook. Note that the Python Earth Engine API should be installed. Alternatively it can be imported into Google Colaboratory (https://colab.research.google.com/).
