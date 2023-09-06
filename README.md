@@ -11,7 +11,7 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 - **Folder Name:** `R`
 - **Description:** This folder contains R scripts and associated data files used to generate figures and visualizations related to the  analysis. 
 
-### 2. Python code (Jupyter Notebooks)
+### 2. Python code (Jupyter Notebook)
 - **Folder Name:** `notebooks`
 - **Description:** This folder contains Jupyter notebooks (.ipynb files) that focus on the extraction of percentages of bioenergy for the top fraction of the landscape.
 
