@@ -26,7 +26,7 @@ R/
 
 ```
 ├── notebooks/
-│   └── analysis_notebook.ipynb
+│   └── PA_GEE.ipynb
 ```
 
 ### 3. Figures
@@ -43,8 +43,8 @@ R/
 - **Description:** This folder contains PDF versions of the Jupyter notebooks and R Markdown documents used in the paper. These PDFs are provided for the convenience of reviewers and readers who may prefer a static, printable format for reviewing the code and results.
 ```
 ├── pdf/
-│   ├── notebook1.pdf
-│   └── notebook2.pdf
+│   ├── analysis.pdf
+│   └── PA_GEE.pdf
 ```
 
 ## How to Use the Repository, R Project, and Jupyter Notebook
