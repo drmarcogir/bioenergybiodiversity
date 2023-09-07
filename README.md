@@ -9,11 +9,33 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 
 ### 1. R Code
 - **Folder Name:** `R`
-- **Description:** This folder contains R scripts and associated data files used to generate figures and visualizations related to the  analysis. 
+- **Description:** This folder contains R scripts and associated data files used to generate figures and visualizations related to the  analysis.
+
+
+```
+├── src
+│   ├── controller
+│   │   ├── **/*.css
+│   ├── views
+│   ├── model
+│   ├── index.js
+├── public
+│   ├── css
+│   │   ├── **/*.css
+│   ├── images
+│   ├── js
+│   ├── index.html
+├── dist (or build
+├── node_modules
+├── package.json
+├── package-lock.json 
+└── .gitignore
+```
 
 ### 2. Python code (Jupyter Notebook)
 - **Folder Name:** `notebooks`
-- **Description:** This folder contains Jupyter notebooks (.ipynb files) that focus on the calculation of Mha of bioenergy inside and ouside protected areas within the most important areas for biodiversity (top 17% of pixels and top 30% of pixels). Calculations were performed using Google Earth Engine via the Python API.
+- **Description:** This folder contains Jupyter notebooks (.ipynb files) with Python code for calculating the Million hectares (Mha) of bioenergy within and outside protected areas in the most important biodiversity areas (top 17% and top 30% of pixels). These calculations were performed using the Google Earth Engine Python API.
+
 
 ### 3. Figures
 - **Folder Name:** `figures`
