@@ -55,21 +55,22 @@ R/
 - **Folder Name:** `figures`
 - **Description:** This folder contains figures produced with the R scripts.
 ```
+figures/
 ├── curves/
-│ └── rangeloss_curve.png
+│   └── rangeloss_curve.png
 └── maps/
-├── SSP1_bivariate.png
-├── SSP2_bivariate.png
-└── SSP5_bivariate.png
+    ├── SSP1_bivariate.png
+    ├── SSP2_bivariate.png
+    └── SSP5_bivariate.png
 ```
 
 ### 5. PDF Docs with Code Readability
 - **Folder Name:** `pdf`
 - **Description:** This folder contains PDF versions of the Jupyter notebooks and R Markdown documents used in the paper. These PDFs are provided for the convenience of reviewers and readers who may prefer a static, printable format for reviewing the code and results.
 ```
-├── pdf/
-│   ├── analysis.pdf
-│   └── PA_GEE.pdf
+pdf/
+├── analysis.pdf
+└── PA_GEE.pdf
 ```
 
 ## How to Use the Repository, R Project, and Jupyter Notebook
