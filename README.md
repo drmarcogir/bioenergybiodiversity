@@ -57,7 +57,8 @@ R/
 ```
 figures/
 ├── curves/
-│   └── rangeloss_curve.png
+│   ├── rangeloss_curve.png
+│   └── prop_species_lost.png
 └── maps/
     ├── SSP1_bivariate.png
     ├── SSP2_bivariate.png
