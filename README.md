@@ -28,7 +28,7 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 └── RCP19_SSP5_2050_bio.tif
 ```
 
-### 1. R Code
+### 2. R Code
 - **Folder Name:** `R`
 - **Description:** This folder contains R scripts used to generate figures and visualizations related to the analysis.
 
@@ -41,7 +41,7 @@ R/
 ```
 
 
-### 2. Python code (Jupyter Notebook)
+### 3. Python code (Jupyter Notebook)
 - **Folder Name:** `notebooks`
 - **Description:** This folder contains a Jupyter notebook (.ipynb) with Python code for calculating the Million hectares (Mha) of bioenergy within and outside protected areas in the most important biodiversity areas (top 17% and top 30% of pixels). These calculations were performed using the Google Earth Engine Python API.
 
@@ -50,7 +50,7 @@ R/
 │   └── PA_GEE.ipynb
 ```
 
-### 3. Figures
+### 4. Figures
 - **Folder Name:** `figures`
 - **Description:** This folder contains figures produced with the R scripts.
 ```
@@ -62,7 +62,7 @@ R/
 └── SSP5_bivariate.png
 ```
 
-### 4. PDF Docs with Code Readability
+### 5. PDF Docs with Code Readability
 - **Folder Name:** `pdf`
 - **Description:** This folder contains PDF versions of the Jupyter notebooks and R Markdown documents used in the paper. These PDFs are provided for the convenience of reviewers and readers who may prefer a static, printable format for reviewing the code and results.
 ```
