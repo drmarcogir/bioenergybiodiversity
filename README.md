@@ -34,10 +34,11 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 
 ```
 R/
-├── functions/
-│ ├── create_scenario_map.R
 ├── analysis.R
 ├── analysis.Rmd
+└── functions/
+    ├── create_scenario_map.R
+    └── range_loss.R
 ```
 
 
