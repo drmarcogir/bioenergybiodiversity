@@ -7,9 +7,30 @@ This README provides an overview of the GitHub repository associated with the pa
 
 The GitHub repository is organized to facilitate easy access to the code, data, and results produced during the research process. The main components of the repository include:
 
+### 1. Data
+- **Folder Name:** `data`
+- **Description:** This folder contains the data files needed to run the R code.
+
+```
+├── backgroundmap/
+│ └── countries.gpkg
+├── csv/
+│ └── speciesdat.zip
+└── rasters/
+├── RCP19_SSP1_2050_bio_cropped.tif
+├── RCP19_SSP1_2050_bio_RICHNESS_cropped.tif
+├── RCP19_SSP1_2050_bio.tif
+├── RCP19_SSP2_2050_bio_cropped.tif
+├── RCP19_SSP2_2050_bio_RICHNESS_cropped.tif
+├── RCP19_SSP2_2050_bio.tif
+├── RCP19_SSP5_2050_bio_cropped.tif
+├── RCP19_SSP5_2050_bio_RICHNESS_cropped.tif
+└── RCP19_SSP5_2050_bio.tif
+```
+
 ### 1. R Code
 - **Folder Name:** `R`
-- **Description:** This folder contains R scripts and associated data files used to generate figures and visualizations related to the analysis.
+- **Description:** This folder contains R scripts used to generate figures and visualizations related to the analysis.
 
 ```
 R/
@@ -33,9 +54,12 @@ R/
 - **Folder Name:** `figures`
 - **Description:** This folder contains figures produced with the R scripts.
 ```
-├── figures/
-│   ├── figure1.png
-│   └── figure2.png
+├── curves/
+│ └── rangeloss_curve.png
+└── maps/
+├── SSP1_bivariate.png
+├── SSP2_bivariate.png
+└── SSP5_bivariate.png
 ```
 
 ### 4. PDF Docs with Code Readability
