@@ -12,20 +12,21 @@ The GitHub repository is organized to facilitate easy access to the code, data, 
 - **Description:** This folder contains the data files needed to run the R code.
 
 ```
-├── backgroundmap/
-│ └── countries.gpkg
-├── csv/
-│ └── speciesdat.zip
-└── rasters/
-├── RCP19_SSP1_2050_bio_cropped.tif
-├── RCP19_SSP1_2050_bio_RICHNESS_cropped.tif
-├── RCP19_SSP1_2050_bio.tif
-├── RCP19_SSP2_2050_bio_cropped.tif
-├── RCP19_SSP2_2050_bio_RICHNESS_cropped.tif
-├── RCP19_SSP2_2050_bio.tif
-├── RCP19_SSP5_2050_bio_cropped.tif
-├── RCP19_SSP5_2050_bio_RICHNESS_cropped.tif
-└── RCP19_SSP5_2050_bio.tif
+── data/
+│   ├── backgroundmap/
+│   │   └── countries.gpkg
+│   ├── csv/
+│   │   └── speciesdat.zip
+│   └── rasters/
+│       ├── RCP19_SSP1_2050_bio_cropped.tif
+│       ├── RCP19_SSP1_2050_bio_RICHNESS_cropped.tif
+│       ├── RCP19_SSP1_2050_bio.tif
+│       ├── RCP19_SSP2_2050_bio_cropped.tif
+│       ├── RCP19_SSP2_2050_bio_RICHNESS_cropped.tif
+│       ├── RCP19_SSP2_2050_bio.tif
+│       ├── RCP19_SSP5_2050_bio_cropped.tif
+│       ├── RCP19_SSP5_2050_bio_RICHNESS_cropped.tif
+│       └── RCP19_SSP5_2050_bio.tif
 ```
 
 ### 2. R Code
@@ -47,7 +48,7 @@ R/
 - **Description:** This folder contains a Jupyter notebook (.ipynb) with Python code for calculating the Million hectares (Mha) of bioenergy within and outside protected areas in the most important biodiversity areas (top 17% and top 30% of pixels). These calculations were performed using the Google Earth Engine Python API.
 
 ```
-├── notebooks/
+── notebooks/
 │   └── PA_GEE.ipynb
 ```
 
