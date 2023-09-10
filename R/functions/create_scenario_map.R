@@ -1,11 +1,11 @@
 create_scenario_map <- function(scenario) {
   # Read richness raster
-  rich_file <- paste0("./data/RCP19_", scenario, "_2050_bio_RICHNESS_cropped.tif")
+  rich_file <- paste0("./data/rasters/RCP19_", scenario, "_2050_bio_RICHNESS_cropped.tif")
   rich <- rast(rich_file) %>%
     project(targetr)
   
   # Read bioenergy raster
-  bioen_file <- paste0("./data/RCP19_", scenario, "_2050_bio_cropped.tif")
+  bioen_file <- paste0("./data/rasters/RCP19_", scenario, "_2050_bio_cropped.tif")
   bioen <- rast(bioen_file) %>%
     project(targetr)
   
@@ -43,7 +43,8 @@ create_scenario_map <- function(scenario) {
     scale_fill_manual(values = c("#cce8d7", "#80c39b", "#008837", "#cedced", "#85a8d0", "#0a50a1", "#fbb4d9",
                                  "#f668b3", "#d60066")) +
     xlab("") + ylab("") +
-    coord_sf(crs = rob, xlim = c(-12808078, 16927051), ylim = c(-5930924, 8342353))
+    coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs",
+             xlim = c(-12808078, 16927051), ylim = c(-5930924, 8342353))
   
   # Create the legend
   mypal <- brewer.qualseq(9)
@@ -70,7 +71,7 @@ create_scenario_map <- function(scenario) {
   finalplot <- ggdraw() + draw_plot(map, 0, 0, 1, 1) + draw_plot(legend, 0.01, 0.1, 0.15, 0.3)
   
   # Save the file
-  fileout <- paste0("./figures/", scenario, "_bioen.png")
+  fileout <- paste0("./figures/maps/", scenario, "_bivariate.png")
   png(fileout, width = 4000, height = 2000, res = 400)
   pushViewport(viewport(layout = grid.layout(1, 1)))
   print(finalplot, vp = viewport(layout.pos.row = 1, layout.pos.col = 1))

@@ -66,10 +66,84 @@ results %>%
   theme(axis.title = element_text(size=15))+
   xlab("Bioenergy expansion (rescaled- was in Mha)")+ylab("Cumulative range loss (rescaled - was in number of pixels)")->p1
 
-ggsave(p1,filename = "./figures/curves/rangeloss_curve.png",width = 8,height = 8,dpi = 400)
+ggsave(p1,filename = "./figures/curves/range_lost.png",
+       width = 8,
+       height = 8,
+       dpi = 400,
+       bg = 'white')
 
 # Proportion of species affected -----------------------------------------------------------------------
 
+source("./R/functions/prop_rich.R")
+
+# read in binary species matrix (all vertebrates)
+dat <- read_csv("./data/csv/speciesdat.csv")
+
+# SSP1
+rast("./data/rasters/RCP19_SSP1_2050_bio.tif") %>%
+  as.data.frame(xy = TRUE) %>%
+  as_tibble() %>%
+  rename(bioen = tmp) %>%
+  # join with species data
+  inner_join(dat) %>%
+  # get rid of coordinates 
+  dplyr::select(-c(x,y)) %>%
+  # arrange data by bioenergy values in descending order
+  arrange(desc(bioen)) %>%
+  # calculate proportion of species lost
+  prop_rich() %>%
+  # insert scenario info
+  mutate(scenario = 'SSP1')->SSP1_res
+
+# SSP2
+rast("./data/rasters/RCP19_SSP2_2050_bio.tif") %>%
+  as.data.frame(xy = TRUE) %>%
+  as_tibble() %>%
+  rename(bioen = tmp) %>%
+  # join with species data
+  inner_join(dat) %>%
+  # get rid of coordinates 
+  dplyr::select(-c(x,y)) %>%
+  # arrange data by bioenergy values in descending order
+  arrange(desc(bioen)) %>%
+  # calculate proportion of species lost
+  prop_rich() %>%
+  # insert scenario info
+  mutate(scenario = 'SSP2')->SSP2_res
 
 
+# SSP5
+rast("./data/rasters/RCP19_SSP5_2050_bio.tif") %>%
+  as.data.frame(xy = TRUE) %>%
+  as_tibble() %>%
+  rename(bioen = tmp) %>%
+  # join with species data
+  inner_join(dat) %>%
+  # get rid of coordinates 
+  dplyr::select(-c(x,y)) %>%
+  # arrange data by bioenergy values in descending order
+  arrange(desc(bioen)) %>%
+  # calculate proportion of species lost
+  prop_rich() %>%
+  # insert scenario info
+  mutate(scenario = 'SSP5')->SSP5_res
+
+
+# final plot
+
+SSP1_res %>%
+  bind_rows(SSP2_res) %>%
+  bind_rows(SSP5_res) %>%
+  dplyr::select(bioen,richcum,scenario) %>%
+  group_by(scenario) %>%
+  mutate(bioen = scales::rescale(bioen,to=c(0,1))) %>%
+  ggplot(.,aes(x=bioen,y=richcum,colour=scenario))+geom_line(size=1)+theme_minimal()+
+  theme(axis.title = element_text(size=15))+
+  xlab("Bioenergy expansion (Mha) rescaled")+ylab("Proportion of species affected")->p2
+
+ggsave(p2,filename = "./figures/curves/prop_species_lost.png",
+       height = 8,
+       width = 8,
+       dpi = 400,
+       bg = 'white')
 

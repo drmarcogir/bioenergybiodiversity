@@ -39,6 +39,7 @@ R/
 ├── analysis.Rmd
 └── functions/
     ├── create_scenario_map.R
+    ├── prop_rich.R
     └── range_loss.R
 ```
 
@@ -58,7 +59,7 @@ notebooks/
 ```
 figures/
 ├── curves/
-│   ├── rangeloss_curve.png
+│   ├── range_lost.png
 │   └── prop_species_lost.png
 └── maps/
     ├── SSP1_bivariate.png
